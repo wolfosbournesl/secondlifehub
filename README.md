@@ -12,6 +12,7 @@ The runtime deployment can be configured independently by each maintainer. This 
 - Shows busy regions, anonymous crowd snapshots, map layers, SLurls and region details.
 - Separates official, community and editorial sources instead of presenting every signal as fact.
 - Includes official events, ShowBuzz live-party previews and public land listings.
+- Includes a clearly labeled community-opportunity workflow: visitors can save local drafts, but nothing is presented as publicly submitted or moderated before a persistent review backend exists.
 - Lets visitors inspect a public avatar profile by UUID/key without an account.
 - Keeps region “abandoned” detection as a review queue: offline is a signal, not proof of abandonment.
 
