@@ -9,6 +9,7 @@ const end = workerSource.indexOf('`;', start);
 if (start < 'const page = `'.length || end < 0) throw new Error('Não foi possível extrair a página do Worker.');
 
 let page = workerSource.slice(start, end);
+page = page.replaceAll('V0.8.27', 'V0.8.28').replaceAll('v0.8.27', 'v0.8.28');
 const staticBridge = `
   const githubPagesMode = location.hostname.endsWith('.github.io') || location.search.includes('static=1');
   const profileRelayOrigin = atob('aHR0cHM6Ly9zZWNvbmRsaWZlaHViLXJlbGF5LnZvbGtzZWM1NC5jaGF0Z3B0LnNpdGU=');
