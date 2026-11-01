@@ -108,7 +108,7 @@ const xmlValue = (tag) => Number(String((feedXml.match(new RegExp('<'+tag+'>\\s*
 const gridStatus = (feedXml.match(/<status>([^<]+)<\/status>/i) || [])[1] || '';
 await fs.writeFile(path.join(dataDir, 'live.json'), json(gridStatus ? { source: 'Linden Lab Live Data Feeds', grid_status: gridStatus, signups: xmlValue('signups'), inworld: xmlValue('inworld'), fetched_at: fetchedAt } : unavailable('Feed oficial indisponível')), 'utf8');
 
-const eventsHtml = await getText('https://secondlife.com/events/?lang=en-US', '');
+const eventsHtml = await getText('https://secondlife.com/events/upcoming.php?lang=en-US&per_page=15', '');
 const eventRows = [...eventsHtml.matchAll(/<tr data-event-id="(\d+)"([^>]*)>([\s\S]*?)<\/tr>/gi)].map((match) => {
   const body = match[3];
   const text = (value) => String(value || '').replace(/<[^>]*>/g, ' ').replace(/&nbsp;/gi, ' ').replace(/&amp;/gi, '&').replace(/&#0*39;|&#x27;/gi, "'").replace(/&quot;/gi, '"').replace(/\s+/g, ' ').trim();
@@ -117,11 +117,11 @@ const eventRows = [...eventsHtml.matchAll(/<tr data-event-id="(\d+)"([^>]*)>([\s
   const parts = encoded.split('/');
   const region = decodeURIComponent(parts[0] || '');
   const categoryId = (match[2].match(/category-id="(\d+)"/i) || [])[1] || '';
-  const title = text((body.match(/class="event-link"[^>]*>([\s\S]*?)<\/a>/i) || [])[1]);
+  const title = text((body.match(/class="event-link"[^>]*>([\s\S]*?)(?:<\/a>|<\/td>)/i) || [])[1]);
   const date = text((body.match(/<td class="event_date">([\s\S]*?)<\/td>/i) || [])[1]);
   return { id: match[1], title, date, region, location: text(link?.[2]), category_id: categoryId, slurl: region ? 'https://maps.secondlife.com/secondlife/'+encodeURIComponent(region)+'/128/128/25' : 'https://secondlife.com/events/?lang=en-US', detail: 'https://secondlife.com/my/community/events/event.php?id='+match[1], source: 'Second Life official events' };
 });
-await fs.writeFile(path.join(dataDir, 'events.json'), json(eventRows.length ? { source: 'Second Life official events', events: eventRows, fetched_at: fetchedAt } : unavailable('Agenda oficial indisponível')), 'utf8');
+await fs.writeFile(path.join(dataDir, 'events.json'), json(eventRows.length ? { source: 'Second Life official events', events: eventRows, fetched_at: fetchedAt, note: 'Snapshot público substituível; confirme horário e disponibilidade na fonte oficial.' } : unavailable('Agenda oficial indisponível')), 'utf8');
 await fs.writeFile(path.join(dataDir, 'event-previews.json'), json(unavailable('Préviews disponíveis no mapa oficial')), 'utf8');
 await fs.writeFile(path.join(dataDir, 'showbuzz.json'), json(unavailable('ShowBuzz precisa de relay server-side')), 'utf8');
 await fs.writeFile(path.join(dataDir, 'showbuzz-calendar.json'), json(unavailable('Agenda ShowBuzz precisa de relay server-side')), 'utf8');

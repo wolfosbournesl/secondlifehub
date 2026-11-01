@@ -21,7 +21,7 @@ The “Ao vivo no mapa” view includes filters for probable language/country pr
 - Includes official events, ShowBuzz live-party previews and public land listings.
 - Includes public inworld group search with relevance, name and popularity sorting, maturity filters, pagination and direct World profile links.
 - Expands avatar lookup by UUID/key only, with public display/username, profile image, full description, maturity metadata, picks and direct viewer/profile links; names and profile URLs are rejected to avoid ambiguity, while RL details and complete name history remain explicitly marked when unavailable.
-- The official-events view supports text, category, day and sort filters, plus public Inworld Map previews for each event region.
+- The official-events view reads the public upcoming-events endpoint, supports text, category, day and sort filters, and shows SLurls plus public Inworld Map previews for each event region.
 - Includes a clearly labeled community-opportunity workflow: visitors can save local drafts, but nothing is presented as publicly submitted or moderated before a persistent review backend exists.
 - Lets visitors inspect a public avatar profile only by UUID/key without an account.
 - Keeps region “abandoned” detection as a review queue: offline is a signal, not proof of abandonment.
@@ -50,6 +50,8 @@ The project is designed around no-login, public sources:
 - [Second Life World API](https://world.secondlife.com/) for public avatar profile pages and picks.
 
 No API keys, private tokens or login credentials are required by the published project. The avatar module is a public-profile consultation, not an online-status checker. It accepts only a UUID/key in UUID format or as 32 hexadecimal characters; names and profile URLs are rejected inside the Hub. The public display name, username, image, description, maturity and picks are rendered in the result panel when the source responds. Official profile/viewer links remain optional secondary actions.
+
+The static GitHub Pages event snapshot is built from the official public upcoming-events endpoint (`/events/upcoming.php`) and includes a timestamp, official detail URL and map SLurl for each record. If the source is temporarily unavailable, the UI shows an explicit unavailable state instead of inventing events.
 
 ## Architecture
 

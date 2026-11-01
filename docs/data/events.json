@@ -1,4 +1,128 @@
 {
-  "status": "unavailable",
-  "error": "Agenda oficial indisponível"
+  "source": "Second Life official events",
+  "events": [
+    {
+      "id": "9417959",
+      "title": "STEVE WHO - OPEN AIR THEATRE @TheMMAC",
+      "date": "11/01 01:00 PM",
+      "region": "Cranston",
+      "location": "TheMMAC : WORLD STAGE - UNDERGROUND - AMPHITHEATER - BALLROOM",
+      "category_id": "20",
+      "slurl": "https://maps.secondlife.com/secondlife/Cranston/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9417959",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9493292",
+      "title": "Join the Service at House of Prayer This Afternoon",
+      "date": "11/01 02:00 PM",
+      "region": "House of Prayer",
+      "location": "God's House of Prayer Church - Main campus",
+      "category_id": "31",
+      "slurl": "https://maps.secondlife.com/secondlife/House%20of%20Prayer/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9493292",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9485197",
+      "title": "CYPRESS ROSEWOOD and DJ KYIZL SANDS at the ISM for November!",
+      "date": "11/01 04:00 PM",
+      "region": "Spaceport Bravo",
+      "location": "International Spaceflight Museum - Spaceport Bravo",
+      "category_id": "20",
+      "slurl": "https://maps.secondlife.com/secondlife/Spaceport%20Bravo/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9485197",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9483885",
+      "title": "5PM SLT - DJ VANNI'S MARTINI JAZZ STIRRED NOT SHAKEN @ THE CELLAR",
+      "date": "11/01 05:00 PM",
+      "region": "Kings Stone",
+      "location": "THE CELLAR JAZZ CLUB",
+      "category_id": "30",
+      "slurl": "https://maps.secondlife.com/secondlife/Kings%20Stone/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9483885",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9484125",
+      "title": "BALLET PIXELLE PRESENTS \"EN PASSANT\"",
+      "date": "11/01 05:00 PM",
+      "region": "Quat",
+      "location": "Ballet Pixelle Theatre",
+      "category_id": "27",
+      "slurl": "https://maps.secondlife.com/secondlife/Quat/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9484125",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9498928",
+      "title": "THE BEST COSTUMES IN SL🎃🪦 ARISARISB&W – HALLOWEEN HORROR CEMETERY 🪦🎃",
+      "date": "11/01 06:00 PM",
+      "region": "ArisAris",
+      "location": "ArisArisB&W",
+      "category_id": "22",
+      "slurl": "https://maps.secondlife.com/secondlife/ArisAris/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9498928",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9498264",
+      "title": "English Class. Voice. Easy English Grammar",
+      "date": "11/02 03:00 AM",
+      "region": "Luo",
+      "location": "Drive-Through ESL (English Language School)",
+      "category_id": "26",
+      "slurl": "https://maps.secondlife.com/secondlife/Luo/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9498264",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9494735",
+      "title": "Morning Devotion at HOP",
+      "date": "11/02 04:00 AM",
+      "region": "House of Prayer",
+      "location": "God's House of Prayer Church - Main campus",
+      "category_id": "31",
+      "slurl": "https://maps.secondlife.com/secondlife/House%20of%20Prayer/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9494735",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9485281",
+      "title": "Do You have Prayer Requests??",
+      "date": "11/02 07:00 AM",
+      "region": "House of Prayer",
+      "location": "God's House of Prayer Church - Main campus",
+      "category_id": "31",
+      "slurl": "https://maps.secondlife.com/secondlife/House%20of%20Prayer/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9485281",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9498804",
+      "title": "English Class. Voice. Comprehension/Listening",
+      "date": "11/02 10:00 AM",
+      "region": "Luo",
+      "location": "Drive-Through ESL (English Language School)",
+      "category_id": "26",
+      "slurl": "https://maps.secondlife.com/secondlife/Luo/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9498804",
+      "source": "Second Life official events"
+    },
+    {
+      "id": "9473822",
+      "title": "Come check out Fantasy Island and Club!!",
+      "date": "11/02 12:00 PM",
+      "region": "The Clip Estate",
+      "location": "Fantasy Island and Club",
+      "category_id": "29",
+      "slurl": "https://maps.secondlife.com/secondlife/The%20Clip%20Estate/128/128/25",
+      "detail": "https://secondlife.com/my/community/events/event.php?id=9473822",
+      "source": "Second Life official events"
+    }
+  ],
+  "fetched_at": "2026-11-01T20:23:15.902Z",
+  "note": "Snapshot público substituível; confirme horário e disponibilidade na fonte oficial."
 }
