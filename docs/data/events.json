@@ -8,6 +8,7 @@
       "region": "Cranston",
       "location": "TheMMAC : WORLD STAGE - UNDERGROUND - AMPHITHEATER - BALLROOM",
       "category_id": "20",
+      "category": "Live Music",
       "slurl": "https://maps.secondlife.com/secondlife/Cranston/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9417959",
       "source": "Second Life official events"
@@ -19,6 +20,7 @@
       "region": "House of Prayer",
       "location": "God's House of Prayer Church - Main campus",
       "category_id": "31",
+      "category": "Espiritualidade",
       "slurl": "https://maps.secondlife.com/secondlife/House%20of%20Prayer/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9493292",
       "source": "Second Life official events"
@@ -30,6 +32,7 @@
       "region": "Spaceport Bravo",
       "location": "International Spaceflight Museum - Spaceport Bravo",
       "category_id": "20",
+      "category": "Live Music",
       "slurl": "https://maps.secondlife.com/secondlife/Spaceport%20Bravo/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9485197",
       "source": "Second Life official events"
@@ -41,6 +44,7 @@
       "region": "Kings Stone",
       "location": "THE CELLAR JAZZ CLUB",
       "category_id": "30",
+      "category": "Live DJ",
       "slurl": "https://maps.secondlife.com/secondlife/Kings%20Stone/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9483885",
       "source": "Second Life official events"
@@ -52,6 +56,7 @@
       "region": "Quat",
       "location": "Ballet Pixelle Theatre",
       "category_id": "27",
+      "category": "Artes e cultura",
       "slurl": "https://maps.secondlife.com/secondlife/Quat/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9484125",
       "source": "Second Life official events"
@@ -63,6 +68,7 @@
       "region": "ArisAris",
       "location": "ArisArisB&W",
       "category_id": "22",
+      "category": "Comercial",
       "slurl": "https://maps.secondlife.com/secondlife/ArisAris/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9498928",
       "source": "Second Life official events"
@@ -74,6 +80,7 @@
       "region": "Luo",
       "location": "Drive-Through ESL (English Language School)",
       "category_id": "26",
+      "category": "Educação",
       "slurl": "https://maps.secondlife.com/secondlife/Luo/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9498264",
       "source": "Second Life official events"
@@ -85,6 +92,7 @@
       "region": "House of Prayer",
       "location": "God's House of Prayer Church - Main campus",
       "category_id": "31",
+      "category": "Espiritualidade",
       "slurl": "https://maps.secondlife.com/secondlife/House%20of%20Prayer/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9494735",
       "source": "Second Life official events"
@@ -96,6 +104,7 @@
       "region": "House of Prayer",
       "location": "God's House of Prayer Church - Main campus",
       "category_id": "31",
+      "category": "Espiritualidade",
       "slurl": "https://maps.secondlife.com/secondlife/House%20of%20Prayer/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9485281",
       "source": "Second Life official events"
@@ -107,6 +116,7 @@
       "region": "Luo",
       "location": "Drive-Through ESL (English Language School)",
       "category_id": "26",
+      "category": "Educação",
       "slurl": "https://maps.secondlife.com/secondlife/Luo/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9498804",
       "source": "Second Life official events"
@@ -118,11 +128,12 @@
       "region": "The Clip Estate",
       "location": "Fantasy Island and Club",
       "category_id": "29",
+      "category": "Diversos",
       "slurl": "https://maps.secondlife.com/secondlife/The%20Clip%20Estate/128/128/25",
       "detail": "https://secondlife.com/my/community/events/event.php?id=9473822",
       "source": "Second Life official events"
     }
   ],
-  "fetched_at": "2026-11-01T20:23:15.902Z",
+  "fetched_at": "2026-11-01T20:24:37.565Z",
   "note": "Snapshot público substituível; confirme horário e disponibilidade na fonte oficial."
 }
