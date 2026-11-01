@@ -716,7 +716,7 @@ export default {
         const name = url.searchParams.get('name') || '';
         if (!name) throw new Error('Região ausente');
         const result = await jsonFrom('https://inworldmap.com/api/regions/' + encodeURIComponent(name));
-        return new Response(JSON.stringify({ ...result, source: 'Inworld Map public read-only API', fetched_at: new Date().toISOString() }), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=60' } });
+        return new Response(JSON.stringify({ ...result, source: 'Inworld Map public read-only API', fetched_at: new Date().toISOString() }), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=60', 'access-control-allow-origin': '*' } });
       } catch (error) {
         return new Response(JSON.stringify({ status: 'unavailable', error: 'Detalhes da região indisponíveis no momento' }), { status: 503, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'access-control-allow-origin': '*' } });
       }
