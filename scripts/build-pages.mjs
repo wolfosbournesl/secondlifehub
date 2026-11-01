@@ -15,6 +15,7 @@ const staticBridge = `
   const profileRelayOrigin = atob('aHR0cHM6Ly9zZWNvbmRsaWZlaHViLXJlbGF5LnZvbGtzZWM1NC5jaGF0Z3B0LnNpdGU=');
   const githubPagesStatic = {
     '/api/world': 'data/world.json',
+    '/api/world-search': 'data/intelligence-search.json',
     '/api/live': 'data/live.json',
     '/api/events': 'data/events.json',
     '/api/event-previews': 'data/event-previews.json',
@@ -60,7 +61,9 @@ const staticBridge = `
       if (value.startsWith('/api/showbuzz')) {
         return nativeFetch(new URL(value, profileRelayOrigin).toString(), { ...init, headers: { accept: 'application/json', ...(init?.headers || {}) } }).catch(() => new Response(JSON.stringify({ status: 'relay_unavailable', message: 'O feed ShowBuzz não respondeu agora.', note: 'Tente novamente em alguns segundos.', fetched_at: new Date().toISOString() }), { status: 503, headers: { 'content-type': 'application/json' } }));
       }
-      if (value.startsWith('/api/')) return nativeFetch(githubPagesTarget(value), init);
+      if (value.startsWith('/api/')) {
+        return nativeFetch(new URL(value, profileRelayOrigin).toString(), { ...init, headers: { accept: 'application/json', ...(init?.headers || {}) } }).then((response) => { if (!response.ok) throw new Error('relay unavailable'); return response; }).catch(() => nativeFetch(githubPagesTarget(value), init));
+      }
       return nativeFetch(input, init);
     };
     const kicker = document.querySelector('.brand-kicker');

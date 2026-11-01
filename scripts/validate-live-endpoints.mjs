@@ -55,7 +55,7 @@ async function request(path) {
     const text = await response.text();
     let body = null;
     try { body = JSON.parse(text); } catch {}
-    return { status: response.status, contentType: response.headers.get('content-type') || '', text, body };
+    return { status: response.status, contentType: response.headers.get('content-type') || '', cors: response.headers.get('access-control-allow-origin') || '', text, body };
   } catch (error) {
     return { error: error.name + ': ' + error.message };
   } finally {
@@ -67,8 +67,10 @@ const results = [];
 for (const [name, path, expectedStatus] of cases) {
   const response = await request(path);
   const shape = expectedShape[name];
+  const corsOk = name === 'root' || response.cors === '*';
   const ok = !response.error
     && response.status === expectedStatus
+    && corsOk
     && (name === 'root'
       ? response.text.includes('GRID INTELLIGENCE · V0.8.28')
         && response.text.includes('residentes online')

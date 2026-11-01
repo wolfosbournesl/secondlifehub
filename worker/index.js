@@ -573,9 +573,9 @@ async function showbuzzImages(names) {
   }
 }
 
-export default {
-  async fetch(request) {
+async function handleRequest(request) {
     const url = new URL(request.url);
+    if (request.method === 'OPTIONS' && url.pathname.startsWith('/api/')) return new Response(null, { status: 204 });
     if (url.pathname === '/api/catalog') {
       return new Response(JSON.stringify({ source: 'Second Life Hub replaceable catalog import', items: catalogSeed, total: catalogSeed.length, fetched_at: new Date().toISOString(), note: 'Registros snapshot e exemplos locais; substitua o importador por uma fonte autorizada quando disponível.' }), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=300' } });
     }
@@ -808,5 +808,17 @@ export default {
     }
     if (url.pathname !== '/' && url.pathname !== '/index.html') return new Response('Not found', { status: 404 });
     return new Response(await renderRootPage(), { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache' } });
+}
+
+export default {
+  async fetch(request) {
+    const response = await handleRequest(request);
+    const requestUrl = new URL(request.url);
+    if (!requestUrl.pathname.startsWith('/api/')) return response;
+    const headers = new Headers(response.headers);
+    headers.set('access-control-allow-origin', '*');
+    headers.set('access-control-allow-methods', 'GET, OPTIONS');
+    headers.set('access-control-allow-headers', 'Content-Type');
+    return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
   }
 };
