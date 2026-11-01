@@ -15,6 +15,7 @@ The runtime deployment can be configured independently by each maintainer. This 
 - The intelligence view includes scan-history charts, maturity composition, a change watchlist and side-by-side region comparison.
 - Separates official, community and editorial sources instead of presenting every signal as fact.
 - Includes official events, ShowBuzz live-party previews and public land listings.
+- Includes public inworld group search with relevance, name and popularity sorting, maturity filters, pagination and direct World profile links.
 - The official-events view supports text, category, day and sort filters, plus public Inworld Map previews for each event region.
 - Includes a clearly labeled community-opportunity workflow: visitors can save local drafts, but nothing is presented as publicly submitted or moderated before a persistent review backend exists.
 - Lets visitors inspect a public avatar profile by UUID/key without an account.
