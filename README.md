@@ -11,6 +11,7 @@ The runtime deployment can be configured independently by each maintainer. This 
 - Brings together public and read-only grid data in one interface.
 - Shows busy regions, anonymous crowd snapshots, map layers, SLurls and region details.
 - The map view provides official tile context with Hub overlays, layer switching, zoom, drag navigation, selectable markers and direct SLurls.
+- The intelligence view includes scan-history charts, maturity composition, a change watchlist and side-by-side region comparison.
 - Separates official, community and editorial sources instead of presenting every signal as fact.
 - Includes official events, ShowBuzz live-party previews and public land listings.
 - The official-events view supports text, category, day and sort filters, plus public Inworld Map previews for each event region.
