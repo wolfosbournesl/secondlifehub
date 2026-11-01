@@ -46,7 +46,7 @@ The project is designed around no-login, public sources:
 - [Inworld Map API](https://inworldmap.com/developers) for read-only region, map, crowd, language and land data.
 - [Linden Lab Live Data Feeds](https://wiki.secondlife.com/wiki/Linden_Lab_Official:Live_Data_Feeds) for global grid status and residents online.
 - [Second Life events](https://secondlife.com/events/?lang=en-US) for the official event calendar.
-- [ShowBuzz](https://showbuzz.org/) for community live entertainment data.
+- [ShowBuzz](https://showbuzz.org/) for community live entertainment data. GitHub Pages routes the live, calendar and image requests through the read-only Worker relay because the static host cannot call the source directly.
 - [Second Life World API](https://world.secondlife.com/) for public avatar profile pages and picks.
 
 No API keys, private tokens or login credentials are required by the published project. The avatar module is a public-profile consultation, not an online-status checker. It accepts only a UUID/key in UUID format or as 32 hexadecimal characters; names and profile URLs are rejected inside the Hub. The public display name, username, image, description, maturity and picks are rendered in the result panel when the source responds. Official profile/viewer links remain optional secondary actions.
