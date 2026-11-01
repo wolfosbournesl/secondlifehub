@@ -26,6 +26,19 @@ The “Ao vivo no mapa” view includes filters for probable language/country pr
 - Lets visitors inspect a public avatar profile by UUID/key without an account.
 - Keeps region “abandoned” detection as a review queue: offline is a signal, not proof of abandonment.
 
+## Catálogo público de destinos
+
+O módulo **Catálogo** organiza regiões, parcelas e experiências em uma view pública, gratuita e responsiva. Cada registro pode conter nome, descrição, SLurl, proprietário/grupo quando publicado, categoria, tags, maturidade, acesso, imagem, eventos relacionados, origem e status do dado.
+
+- Busca por nome, região, descrição e tags, com filtros por tipo, categoria, maturidade, acesso, favoritos, visitados e eventos relacionados.
+- Detalhe interno do destino com imagem, origem, SLurl para o mapa e ações locais; as views existentes de Grupos e Eventos continuam acessíveis pelo catálogo.
+- Seletor aleatório e links para o mapa do Second Life. A abertura no viewer depende do sistema operacional e do viewer instalado; não é considerada validada pelo Hub.
+- Favoritos, visitados e coleções de landmarks usam apenas `localStorage` no navegador. Não há login, perfil, sessão, cookie de identidade, sincronização ou coleta de PII.
+- Dados iniciais substituíveis em [`data/catalog.json`](data/catalog.json) e [`data/catalog.csv`](data/catalog.csv). O contrato de importação é validado por `node scripts/validate-catalog.mjs`.
+- A rota Worker `/api/catalog` e o fallback estático `docs/data/catalog.json` compartilham o mesmo formato. Substitua o seed por um adaptador autorizado que preserve a origem, o timestamp e o status de cada registro.
+
+Registros marcados como `example` são demonstrativos e não comprovam existência, propriedade, disponibilidade ou evento ativo. O seed de regiões e parcelas usa snapshots públicos, que podem mudar; confirme sempre a SLurl no mapa oficial.
+
 ## Data sources
 
 The project is designed around no-login, public sources:

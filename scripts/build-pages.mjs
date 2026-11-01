@@ -28,6 +28,7 @@ const staticBridge = `
     '/api/showbuzz': 'data/showbuzz.json',
     '/api/showbuzz-calendar': 'data/showbuzz-calendar.json',
     '/api/showbuzz-images': 'data/showbuzz-images.json',
+    '/api/catalog': 'data/catalog.json',
   };
   const githubPagesTarget = (input) => {
     const target = new URL(input, location.href);
@@ -130,5 +131,6 @@ await fs.writeFile(path.join(dataDir, 'event-previews.json'), json(unavailable('
 await fs.writeFile(path.join(dataDir, 'showbuzz.json'), json(unavailable('ShowBuzz precisa de relay server-side')), 'utf8');
 await fs.writeFile(path.join(dataDir, 'showbuzz-calendar.json'), json(unavailable('Agenda ShowBuzz precisa de relay server-side')), 'utf8');
 await fs.writeFile(path.join(dataDir, 'showbuzz-images.json'), json(unavailable('Imagens ShowBuzz precisam de relay server-side')), 'utf8');
+await fs.copyFile(path.join(root, 'data', 'catalog.json'), path.join(dataDir, 'catalog.json'));
 await fs.writeFile(path.join(dataDir, 'avatar-profile.json'), json(unavailable('No GitHub Pages, abra o perfil público do avatar diretamente no World API')), 'utf8');
 await fs.writeFile(path.join(dataDir, 'unavailable.json'), json(unavailable('Este módulo precisa de uma fonte pública compatível com GitHub Pages')), 'utf8');
