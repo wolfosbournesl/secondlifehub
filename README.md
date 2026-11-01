@@ -2,8 +2,9 @@
 
 Open-source radar for the Second Life grid: regions, crowd signals, maps, SLurls, events, live parties, public avatar profiles, land for sale and review signals for regions that need a closer look.
 
-**Live app:** [second-life-hub.volksec54.chatgpt.site](https://second-life-hub.volksec54.chatgpt.site)  
-**Project page:** [wolfosbournesl.github.io/secondlife-hub](https://wolfosbournesl.github.io/secondlife-hub/)
+**Project page:** [wolfosbournesl.github.io/secondlifehub](https://wolfosbournesl.github.io/secondlifehub/)
+
+The runtime deployment can be configured independently by each maintainer. This repository does not publish a provider-specific runtime URL or any private deployment identifier.
 
 ## What it does
 
@@ -44,7 +45,7 @@ Public Second Life and community sources
 - `dist/server/index.js` is the generated Worker entrypoint used by Sites.
 - `scripts/build.sh` generates the deployable `dist/` directory.
 - `scripts/validate-artifact.mjs` checks the generated artifact before publication.
-- `docs/` is the static GitHub Pages project page. GitHub Pages cannot execute the Worker API; the live-data app remains deployed on the live app URL above.
+- `docs/` is the static GitHub Pages project page. GitHub Pages cannot execute the Worker API; the live-data runtime is configured separately from this repository.
 
 ## Run locally
 
