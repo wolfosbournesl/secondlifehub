@@ -36,7 +36,7 @@ The project is designed around no-login, public sources:
 - [ShowBuzz](https://showbuzz.org/) for community live entertainment data.
 - [Second Life World API](https://world.secondlife.com/) for public avatar profile pages and picks.
 
-No API keys, private tokens or login credentials are required by the published project. The public profile page does not provide a reliable real-time online flag; the Hub reports that limitation instead of guessing. Exact presence confirmation would require an authorized viewer/LSL bridge.
+No API keys, private tokens or login credentials are required by the published project. The public profile page does not provide a reliable real-time online flag; the Hub reports that limitation instead of guessing. Exact presence confirmation would require an authorized viewer/LSL bridge. On GitHub Pages, a UUID/key now produces a usable direct profile/viewer result; the server relay additionally renders the public profile, image and picks when available.
 
 ## Architecture
 

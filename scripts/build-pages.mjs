@@ -45,8 +45,8 @@ const staticBridge = `
       if (value.startsWith('/api/avatar-presence')) {
         const query = new URL(value, location.href).searchParams.get('q') || '';
         const uuid = query.match(/[0-9a-f]{8}(?:-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|[0-9a-f]{24})/i)?.[0] || '';
-        const payload = { status: 'static_pages', input: query, online: null, message: 'O GitHub Pages não executa o relay do perfil; abra a fonte pública para consultar os detalhes atuais.', note: 'A aplicação permanece no GitHub Pages e oferece o perfil público oficial para consulta direta.', profile_url: uuid ? 'https://world.secondlife.com/resident/' + uuid : null, search_url: uuid ? null : 'https://search.secondlife.com/?query_term=' + encodeURIComponent(query) + '&search_type=standard&collection_chosen=people' };
-        return Promise.resolve(new Response(JSON.stringify(payload), { status: 503, headers: { 'content-type': 'application/json' } }));
+        const payload = { status: 'static_pages', input: query, agent_id: uuid || null, display_name: uuid || query, online: null, message: uuid ? 'A key foi reconhecida. O perfil público oficial está pronto para abrir com os dados atuais.' : 'Para um nome, a busca pública oficial precisa confirmar a pessoa correta antes de expor uma key.', note: 'O GitHub Pages não executa o relay server-side; o link oficial abre os dados atuais publicados pela fonte.', profile_url: uuid ? 'https://world.secondlife.com/resident/' + uuid : null, viewer_url: uuid ? 'secondlife:///app/agent/' + uuid + '/about' : null, search_url: uuid ? null : 'https://search.secondlife.com/?query_term=' + encodeURIComponent(query) + '&search_type=standard&collection_chosen=people', fetched_at: new Date().toISOString() };
+        return Promise.resolve(new Response(JSON.stringify(payload), { status: 200, headers: { 'content-type': 'application/json' } }));
       }
       if (value.startsWith('/api/')) return nativeFetch(githubPagesTarget(value), init);
       return nativeFetch(input, init);
