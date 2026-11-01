@@ -20,7 +20,7 @@ The “Ao vivo no mapa” view includes filters for probable language/country pr
 - Separates official, community and editorial sources instead of presenting every signal as fact.
 - Includes official events, ShowBuzz live-party previews and public land listings.
 - Includes public inworld group search with relevance, name and popularity sorting, maturity filters, pagination and direct World profile links.
-- Expands avatar lookup with public display/username, UUID/key, profile image, full description, maturity metadata, picks and direct viewer/profile links; online presence, RL details and complete name history remain explicitly marked when unavailable.
+- Expands avatar lookup with public display/username, UUID/key, profile image, full description, maturity metadata, picks and direct viewer/profile links; RL details and complete name history remain explicitly marked when unavailable.
 - The official-events view supports text, category, day and sort filters, plus public Inworld Map previews for each event region.
 - Includes a clearly labeled community-opportunity workflow: visitors can save local drafts, but nothing is presented as publicly submitted or moderated before a persistent review backend exists.
 - Lets visitors inspect a public avatar profile by UUID/key without an account.
@@ -36,7 +36,7 @@ The project is designed around no-login, public sources:
 - [ShowBuzz](https://showbuzz.org/) for community live entertainment data.
 - [Second Life World API](https://world.secondlife.com/) for public avatar profile pages and picks.
 
-No API keys, private tokens or login credentials are required by the published project. The public profile page does not provide a reliable real-time online flag; the Hub reports that limitation instead of guessing. Exact presence confirmation would require an authorized viewer/LSL bridge. On GitHub Pages, a UUID/key now produces a usable direct profile/viewer result; the server relay additionally renders the public profile, image and picks when available.
+No API keys, private tokens or login credentials are required by the published project. The avatar module is a public-profile consultation, not an online-status checker. On GitHub Pages, a UUID/key produces a usable direct profile/viewer result; the server relay additionally renders the public profile, image and picks when available.
 
 ## Architecture
 
