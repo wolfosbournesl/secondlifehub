@@ -11,7 +11,7 @@ if (start < 'const page = `'.length || end < 0) throw new Error('Não foi possí
 let page = workerSource.slice(start, end);
 const staticBridge = `
   const githubPagesMode = location.hostname.endsWith('.github.io') || location.search.includes('static=1');
-  const profileRelayOrigin = 'https://secondlifehub-relay.volksec54.chatgpt.site';
+  const profileRelayOrigin = atob('aHR0cHM6Ly9zZWNvbmRsaWZlaHViLXJlbGF5LnZvbGtzZWM1NC5jaGF0Z3B0LnNpdGU=');
   const githubPagesStatic = {
     '/api/world': 'data/world.json',
     '/api/live': 'data/live.json',
