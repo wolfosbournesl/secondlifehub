@@ -1,0 +1,639 @@
+{
+  "regions": 27293,
+  "avatars": 30242,
+  "regions_with_people": 9146,
+  "for_sale": 4377,
+  "recent_changes": [
+    {
+      "name": "Chances",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Chances/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Mature",
+      "when": "2026-11-01T13:30:30.6704975Z"
+    },
+    {
+      "name": "Crystal Waters",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Crystal%20Waters/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Mature",
+      "when": "2026-11-01T13:30:30.6704975Z"
+    },
+    {
+      "name": "Hangover Heights",
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 2,
+      "slurl": "https://maps.secondlife.com/secondlife/Hangover%20Heights/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Mature",
+      "after": "Adult",
+      "when": "2026-11-01T13:30:30.6704975Z"
+    },
+    {
+      "name": "King",
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/King/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Mature",
+      "after": "Adult",
+      "when": "2026-11-01T13:30:30.6704975Z"
+    },
+    {
+      "name": "Ano",
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Ano/128/128/25",
+      "online": true,
+      "event": "new",
+      "before": null,
+      "after": "Ano",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Bunting",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Bunting/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Curlew",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Curlew/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Cygnet",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Cygnet/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Falcon",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Falcon/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Fulmar",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Fulmar/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Heron",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Heron/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Hobby",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Hobby/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Kestrel",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Kestrel/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Kite",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Kite/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Magpie",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Magpie/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Osprey",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Osprey/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Pelican",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Pelican/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Raven",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Raven/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Robin",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Robin/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Stork",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Stork/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Swallow",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Swallow/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Swift",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Swift/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Arcady Wren",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Arcady%20Wren/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Ashen Vale",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Ashen%20Vale/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Mature",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Austral",
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Austral/128/128/25",
+      "online": true,
+      "event": "rating_changed",
+      "before": "Adult",
+      "after": "Down",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    }
+  ],
+  "scan": {
+    "started_at": "2026-11-01T12:00:42.1820862Z",
+    "generated_at": "2026-11-01T13:30:30.6704975Z",
+    "status": "complete",
+    "complete": true,
+    "regions": 27321,
+    "avatars": 30242
+  },
+  "by_rating": [
+    {
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "color": "#f43f5e",
+      "regions": 7173,
+      "avatars": 15261
+    },
+    {
+      "rating": "Offline",
+      "rating_slug": "offline",
+      "color": "#64748b",
+      "regions": 28,
+      "avatars": 0
+    },
+    {
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "color": "#f59e0b",
+      "regions": 17912,
+      "avatars": 13593
+    },
+    {
+      "rating": "General",
+      "rating_slug": "general",
+      "color": "#10b981",
+      "regions": 2208,
+      "avatars": 1388
+    }
+  ],
+  "by_week": [
+    {
+      "week": "2026-10-05",
+      "new": 26,
+      "gone": 31,
+      "back": 0
+    },
+    {
+      "week": "2026-10-12",
+      "new": 97,
+      "gone": 136,
+      "back": 21
+    },
+    {
+      "week": "2026-10-19",
+      "new": 33,
+      "gone": 75,
+      "back": 38
+    },
+    {
+      "week": "2026-10-26",
+      "new": 38,
+      "gone": 58,
+      "back": 3
+    }
+  ],
+  "by_scan": [
+    {
+      "when": "2026-10-09T03:58:04.8889909Z",
+      "avatars": 35060,
+      "regions": 27365,
+      "parcels_for_sale": 3873
+    },
+    {
+      "when": "2026-10-09T13:31:57.8050109Z",
+      "avatars": 28509,
+      "regions": 27360,
+      "parcels_for_sale": 4235
+    },
+    {
+      "when": "2026-10-10T01:36:41.8088987Z",
+      "avatars": 39337,
+      "regions": 27360,
+      "parcels_for_sale": 4252
+    },
+    {
+      "when": "2026-10-10T13:33:24.5650502Z",
+      "avatars": 29700,
+      "regions": 27363,
+      "parcels_for_sale": 4252
+    },
+    {
+      "when": "2026-10-11T01:32:16.3916195Z",
+      "avatars": 40228,
+      "regions": 27364,
+      "parcels_for_sale": 4274
+    },
+    {
+      "when": "2026-10-11T13:31:45.7640713Z",
+      "avatars": 30885,
+      "regions": 27364,
+      "parcels_for_sale": 4274
+    },
+    {
+      "when": "2026-10-12T01:31:34.4446886Z",
+      "avatars": 39518,
+      "regions": 27360,
+      "parcels_for_sale": 4258
+    },
+    {
+      "when": "2026-10-12T13:31:20.7624217Z",
+      "avatars": 30897,
+      "regions": 27360,
+      "parcels_for_sale": 4258
+    },
+    {
+      "when": "2026-10-13T01:32:25.6540667Z",
+      "avatars": 38510,
+      "regions": 27364,
+      "parcels_for_sale": 4369
+    },
+    {
+      "when": "2026-10-14T01:32:29.5449058Z",
+      "avatars": 34688,
+      "regions": 27365,
+      "parcels_for_sale": 4251
+    },
+    {
+      "when": "2026-10-14T13:31:04.0555027Z",
+      "avatars": 27141,
+      "regions": 27365,
+      "parcels_for_sale": 4251
+    },
+    {
+      "when": "2026-10-15T01:32:31.0927958Z",
+      "avatars": 37080,
+      "regions": 27375,
+      "parcels_for_sale": 4277
+    },
+    {
+      "when": "2026-10-15T13:31:46.490692Z",
+      "avatars": 27729,
+      "regions": 27375,
+      "parcels_for_sale": 4277
+    },
+    {
+      "when": "2026-10-16T01:34:47.3574093Z",
+      "avatars": 37230,
+      "regions": 27361,
+      "parcels_for_sale": 4269
+    },
+    {
+      "when": "2026-10-16T13:31:33.356316Z",
+      "avatars": 28005,
+      "regions": 27361,
+      "parcels_for_sale": 4269
+    },
+    {
+      "when": "2026-10-17T01:33:14.6686494Z",
+      "avatars": 39090,
+      "regions": 27350,
+      "parcels_for_sale": 4285
+    },
+    {
+      "when": "2026-10-17T13:33:08.7404793Z",
+      "avatars": 30039,
+      "regions": 27347,
+      "parcels_for_sale": 4285
+    },
+    {
+      "when": "2026-10-18T01:32:19.0414625Z",
+      "avatars": 40879,
+      "regions": 27347,
+      "parcels_for_sale": 4327
+    },
+    {
+      "when": "2026-10-18T13:31:35.8973503Z",
+      "avatars": 30678,
+      "regions": 27345,
+      "parcels_for_sale": 4327
+    },
+    {
+      "when": "2026-10-19T01:32:57.1419292Z",
+      "avatars": 39081,
+      "regions": 27346,
+      "parcels_for_sale": 4301
+    },
+    {
+      "when": "2026-10-19T13:31:58.517741Z",
+      "avatars": 28405,
+      "regions": 27342,
+      "parcels_for_sale": 4301
+    },
+    {
+      "when": "2026-10-20T01:32:52.2959481Z",
+      "avatars": 37392,
+      "regions": 27343,
+      "parcels_for_sale": 4415
+    },
+    {
+      "when": "2026-10-21T01:31:59.0467148Z",
+      "avatars": 36586,
+      "regions": 27307,
+      "parcels_for_sale": 4309
+    },
+    {
+      "when": "2026-10-22T01:32:48.7790926Z",
+      "avatars": 36829,
+      "regions": 27336,
+      "parcels_for_sale": 4342
+    },
+    {
+      "when": "2026-10-22T13:32:13.6934289Z",
+      "avatars": 27428,
+      "regions": 27327,
+      "parcels_for_sale": 4323
+    },
+    {
+      "when": "2026-10-23T01:36:12.0827157Z",
+      "avatars": 37317,
+      "regions": 27331,
+      "parcels_for_sale": 4323
+    },
+    {
+      "when": "2026-10-23T13:34:53.4035099Z",
+      "avatars": 28090,
+      "regions": 27331,
+      "parcels_for_sale": 4288
+    },
+    {
+      "when": "2026-10-24T01:35:11.6699792Z",
+      "avatars": 39382,
+      "regions": 27333,
+      "parcels_for_sale": 4288
+    },
+    {
+      "when": "2026-10-24T13:32:22.145779Z",
+      "avatars": 29769,
+      "regions": 27333,
+      "parcels_for_sale": 4301
+    },
+    {
+      "when": "2026-10-25T01:32:59.5430987Z",
+      "avatars": 41085,
+      "regions": 27338,
+      "parcels_for_sale": 4301
+    },
+    {
+      "when": "2026-10-25T13:32:37.3260928Z",
+      "avatars": 30460,
+      "regions": 27338,
+      "parcels_for_sale": 4296
+    },
+    {
+      "when": "2026-10-26T01:35:39.0691915Z",
+      "avatars": 39770,
+      "regions": 27338,
+      "parcels_for_sale": 4296
+    },
+    {
+      "when": "2026-10-26T13:32:38.1229388Z",
+      "avatars": 28384,
+      "regions": 27338,
+      "parcels_for_sale": 4286
+    },
+    {
+      "when": "2026-10-27T01:34:03.4663198Z",
+      "avatars": 39445,
+      "regions": 27340,
+      "parcels_for_sale": 4286
+    },
+    {
+      "when": "2026-10-27T13:32:51.0972674Z",
+      "avatars": 27636,
+      "regions": 27340,
+      "parcels_for_sale": 4295
+    },
+    {
+      "when": "2026-10-28T01:32:45.3305141Z",
+      "avatars": 38426,
+      "regions": 27327,
+      "parcels_for_sale": 4320
+    },
+    {
+      "when": "2026-10-29T01:46:23.8972689Z",
+      "avatars": 38892,
+      "regions": 27316,
+      "parcels_for_sale": 4323
+    },
+    {
+      "when": "2026-10-29T13:32:21.4658693Z",
+      "avatars": 28175,
+      "regions": 27316,
+      "parcels_for_sale": 4323
+    },
+    {
+      "when": "2026-10-30T01:34:02.7764494Z",
+      "avatars": 39201,
+      "regions": 27318,
+      "parcels_for_sale": 4353
+    },
+    {
+      "when": "2026-10-30T13:31:40.5976807Z",
+      "avatars": 28810,
+      "regions": 27318,
+      "parcels_for_sale": 4353
+    },
+    {
+      "when": "2026-10-31T01:29:55.3995147Z",
+      "avatars": 41914,
+      "regions": 27324,
+      "parcels_for_sale": 4347
+    },
+    {
+      "when": "2026-10-31T13:29:45.044921Z",
+      "avatars": 29644,
+      "regions": 27324,
+      "parcels_for_sale": 4347
+    },
+    {
+      "when": "2026-11-01T01:30:52.2906417Z",
+      "avatars": 41994,
+      "regions": 27321,
+      "parcels_for_sale": 4382
+    },
+    {
+      "when": "2026-11-01T13:30:30.6704975Z",
+      "avatars": 30242,
+      "regions": 27321,
+      "parcels_for_sale": 4382
+    }
+  ],
+  "fetched_at": "2026-11-01T17:33:11.996Z"
+}

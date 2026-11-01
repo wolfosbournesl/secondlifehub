@@ -2,9 +2,11 @@
 
 Open-source radar for the Second Life grid: regions, crowd signals, maps, SLurls, events, live parties, public avatar profiles, land for sale and review signals for regions that need a closer look.
 
-**Project page:** [wolfosbournesl.github.io/secondlifehub](https://wolfosbournesl.github.io/secondlifehub/)
+**Application:** [Abrir no GitHub Pages](https://wolfosbournesl.github.io/secondlifehub/app.html) · **Project page:** [wolfosbournesl.github.io/secondlifehub](https://wolfosbournesl.github.io/secondlifehub/)
 
 The runtime deployment can be configured independently by each maintainer. This repository does not publish a provider-specific runtime URL or any private deployment identifier.
+
+The GitHub Pages application is self-contained on the project domain. It uses public snapshots refreshed by GitHub Actions and links directly to official Second Life sources when a static page cannot perform a server-side relay.
 
 ## What it does
 

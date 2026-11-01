@@ -1,0 +1,348 @@
+{
+  "languages": [
+    {
+      "code": "en",
+      "name": "English",
+      "regions": 15254,
+      "avatars": 19627,
+      "from_description": 10285,
+      "from_name": 4969,
+      "top_regions": [
+        {
+          "name": "Bloodstone Island",
+          "avatars": 94,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Boredom",
+          "avatars": 87,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Land of Vampires",
+          "avatars": 80,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Bunny Boy",
+          "avatars": 76,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        }
+      ]
+    },
+    {
+      "code": "fr",
+      "name": "French",
+      "regions": 153,
+      "avatars": 149,
+      "from_description": 29,
+      "from_name": 124,
+      "top_regions": [
+        {
+          "name": "Made in Paris",
+          "avatars": 6,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "DERNIER",
+          "avatars": 4,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "Vallory",
+          "avatars": 3,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "West Petrovia",
+          "avatars": 3,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        }
+      ]
+    },
+    {
+      "code": "es",
+      "name": "Spanish",
+      "regions": 153,
+      "avatars": 105,
+      "from_description": 23,
+      "from_name": 130,
+      "top_regions": [
+        {
+          "name": "Unihispana",
+          "avatars": 29,
+          "rating": "General",
+          "rating_slug": "general"
+        },
+        {
+          "name": "Bawdy Beaches",
+          "avatars": 1,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Bellaflor",
+          "avatars": 1,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "EDGE Paradise",
+          "avatars": 1,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        }
+      ]
+    },
+    {
+      "code": "it",
+      "name": "Italian",
+      "regions": 93,
+      "avatars": 60,
+      "from_description": 11,
+      "from_name": 82,
+      "top_regions": [
+        {
+          "name": "Aqua Shores",
+          "avatars": 4,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Nabru City",
+          "avatars": 4,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Dormillouse",
+          "avatars": 2,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "Eretria Island",
+          "avatars": 2,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        }
+      ]
+    },
+    {
+      "code": "de",
+      "name": "German",
+      "regions": 71,
+      "avatars": 121,
+      "from_description": 71,
+      "from_name": 0,
+      "top_regions": [
+        {
+          "name": "Mystical Darkwood",
+          "avatars": 9,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Velkyn Dreams",
+          "avatars": 9,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Old Town",
+          "avatars": 8,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Unreal",
+          "avatars": 7,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        }
+      ]
+    },
+    {
+      "code": "pt",
+      "name": "Portuguese",
+      "regions": 59,
+      "avatars": 58,
+      "from_description": 28,
+      "from_name": 31,
+      "top_regions": [
+        {
+          "name": "AJUDA BRASIL VOLUNTARIOS",
+          "avatars": 8,
+          "rating": "General",
+          "rating_slug": "general"
+        },
+        {
+          "name": "Ilha Brasil",
+          "avatars": 8,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "Rigor Mortis",
+          "avatars": 8,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Distrito Central",
+          "avatars": 7,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        }
+      ]
+    },
+    {
+      "code": "ja",
+      "name": "Japanese",
+      "regions": 17,
+      "avatars": 33,
+      "from_description": 17,
+      "from_name": 0,
+      "top_regions": [
+        {
+          "name": "Aulen",
+          "avatars": 11,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        },
+        {
+          "name": "Amour",
+          "avatars": 5,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "Japan Resort V",
+          "avatars": 3,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "orz",
+          "avatars": 3,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        }
+      ]
+    },
+    {
+      "code": "nl",
+      "name": "Dutch",
+      "regions": 3,
+      "avatars": 0,
+      "from_description": 3,
+      "from_name": 0,
+      "top_regions": [
+        {
+          "name": "ALOHA to Freedom",
+          "avatars": 0,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "Nederland",
+          "avatars": 0,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "Senses Cove",
+          "avatars": 0,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        }
+      ]
+    },
+    {
+      "code": "zh",
+      "name": "Chinese",
+      "regions": 2,
+      "avatars": 4,
+      "from_description": 2,
+      "from_name": 0,
+      "top_regions": [
+        {
+          "name": "Digital Realms",
+          "avatars": 2,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "Iku Turso",
+          "avatars": 2,
+          "rating": "General",
+          "rating_slug": "general"
+        }
+      ]
+    },
+    {
+      "code": "ru",
+      "name": "Russian",
+      "regions": 2,
+      "avatars": 1,
+      "from_description": 2,
+      "from_name": 0,
+      "top_regions": [
+        {
+          "name": "Olive",
+          "avatars": 1,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        },
+        {
+          "name": "Moonvalley",
+          "avatars": 0,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        }
+      ]
+    },
+    {
+      "code": "el",
+      "name": "Greek",
+      "regions": 1,
+      "avatars": 2,
+      "from_description": 1,
+      "from_name": 0,
+      "top_regions": [
+        {
+          "name": "RIZZO BRESSETT ESTATE",
+          "avatars": 2,
+          "rating": "Moderate",
+          "rating_slug": "moderate"
+        }
+      ]
+    },
+    {
+      "code": "ar",
+      "name": "Arabic",
+      "regions": 1,
+      "avatars": 0,
+      "from_description": 1,
+      "from_name": 0,
+      "top_regions": [
+        {
+          "name": "Spiaggetta",
+          "avatars": 0,
+          "rating": "Adult",
+          "rating_slug": "adult"
+        }
+      ]
+    }
+  ],
+  "unknown": 11484,
+  "with_language": 15809
+}

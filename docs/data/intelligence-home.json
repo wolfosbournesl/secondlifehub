@@ -1,0 +1,245 @@
+{
+  "totals": {
+    "regions": 27293,
+    "avatars": 30242,
+    "regions_with_people": 9146,
+    "for_sale": 4377
+  },
+  "scan": {
+    "started_at": "2026-11-01T12:00:42.1820862Z",
+    "generated_at": "2026-11-01T13:30:30.6704975Z",
+    "status": "complete",
+    "complete": true,
+    "regions": 27321,
+    "avatars": 30242
+  },
+  "latest_scan": {
+    "started_at": "2026-11-01T12:00:42.1820862Z",
+    "generated_at": "2026-11-01T13:30:30.6704975Z",
+    "status": "complete",
+    "complete": true,
+    "regions": 27321,
+    "avatars": 30242
+  },
+  "busiest": [
+    {
+      "name": "NOTORIOUS Kingdom",
+      "x": 582,
+      "y": 1342,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 184,
+      "slurl": "https://maps.secondlife.com/secondlife/NOTORIOUS%20Kingdom/128/128/25"
+    },
+    {
+      "name": "Bloodstone Island",
+      "x": 720,
+      "y": 1386,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 94,
+      "slurl": "https://maps.secondlife.com/secondlife/Bloodstone%20Island/128/128/25"
+    },
+    {
+      "name": "Coco Beach Cove",
+      "x": 896,
+      "y": 1279,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 92,
+      "slurl": "https://maps.secondlife.com/secondlife/Coco%20Beach%20Cove/128/128/25"
+    },
+    {
+      "name": "Boredom",
+      "x": 937,
+      "y": 1204,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 87,
+      "slurl": "https://maps.secondlife.com/secondlife/Boredom/128/128/25"
+    },
+    {
+      "name": "Gold Paradise",
+      "x": 542,
+      "y": 922,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 87,
+      "slurl": "https://maps.secondlife.com/secondlife/Gold%20Paradise/128/128/25"
+    },
+    {
+      "name": "Sugarwood",
+      "x": 585,
+      "y": 1357,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 82,
+      "slurl": "https://maps.secondlife.com/secondlife/Sugarwood/128/128/25"
+    },
+    {
+      "name": "Land of Vampires",
+      "x": 778,
+      "y": 1061,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 80,
+      "slurl": "https://maps.secondlife.com/secondlife/Land%20of%20Vampires/128/128/25"
+    },
+    {
+      "name": "Bunny Boy",
+      "x": 899,
+      "y": 1372,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 76,
+      "slurl": "https://maps.secondlife.com/secondlife/Bunny%20Boy/128/128/25"
+    },
+    {
+      "name": "PEAK Lounge",
+      "x": 908,
+      "y": 1205,
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 75,
+      "slurl": "https://maps.secondlife.com/secondlife/PEAK%20Lounge/128/128/25"
+    },
+    {
+      "name": "Paalen",
+      "x": 1005,
+      "y": 1137,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 72,
+      "slurl": "https://maps.secondlife.com/secondlife/Paalen/128/128/25"
+    },
+    {
+      "name": "The Known World",
+      "x": 625,
+      "y": 1286,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 71,
+      "slurl": "https://maps.secondlife.com/secondlife/The%20Known%20World/128/128/25"
+    },
+    {
+      "name": "escort oasis",
+      "x": 857,
+      "y": 977,
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 65,
+      "slurl": "https://maps.secondlife.com/secondlife/escort%20oasis/128/128/25"
+    }
+  ],
+  "new_regions": [
+    {
+      "name": "Ano",
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Ano/128/128/25",
+      "event": "new",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Blackthorn Reach",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Blackthorn%20Reach/128/128/25",
+      "event": "new",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Night Fall",
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Night%20Fall/128/128/25",
+      "event": "new",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "SXGN KINGDOM 2",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/SXGN%20KINGDOM%202/128/128/25",
+      "event": "new",
+      "when": "2026-11-01T01:30:52.2906417Z"
+    },
+    {
+      "name": "Clearweather Lake",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 2,
+      "slurl": "https://maps.secondlife.com/secondlife/Clearweather%20Lake/128/128/25",
+      "event": "new",
+      "when": "2026-10-31T01:29:55.3995147Z"
+    },
+    {
+      "name": "Cougar Wells",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Cougar%20Wells/128/128/25",
+      "event": "new",
+      "when": "2026-10-31T01:29:55.3995147Z"
+    },
+    {
+      "name": "Devil Cake",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Devil%20Cake/128/128/25",
+      "event": "new",
+      "when": "2026-10-31T01:29:55.3995147Z"
+    },
+    {
+      "name": "EVolution26",
+      "rating": "Adult",
+      "rating_slug": "adult",
+      "avatars": 2,
+      "slurl": "https://maps.secondlife.com/secondlife/EVolution26/128/128/25",
+      "event": "new",
+      "when": "2026-10-31T01:29:55.3995147Z"
+    },
+    {
+      "name": "Genesis Avatar 2",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Genesis%20Avatar%202/128/128/25",
+      "event": "new",
+      "when": "2026-10-31T01:29:55.3995147Z"
+    },
+    {
+      "name": "Genesis Shops North",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Genesis%20Shops%20North/128/128/25",
+      "event": "new",
+      "when": "2026-10-31T01:29:55.3995147Z"
+    },
+    {
+      "name": "Genesis Shops South",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Genesis%20Shops%20South/128/128/25",
+      "event": "new",
+      "when": "2026-10-31T01:29:55.3995147Z"
+    },
+    {
+      "name": "Genesis Social Square",
+      "rating": "Moderate",
+      "rating_slug": "moderate",
+      "avatars": 0,
+      "slurl": "https://maps.secondlife.com/secondlife/Genesis%20Social%20Square/128/128/25",
+      "event": "new",
+      "when": "2026-10-31T01:29:55.3995147Z"
+    }
+  ],
+  "fetched_at": "2026-11-01T17:33:11.996Z"
+}
