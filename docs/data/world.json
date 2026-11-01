@@ -22,7 +22,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 184,
-      "slurl": "https://maps.secondlife.com/secondlife/NOTORIOUS%20Kingdom/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/NOTORIOUS%20Kingdom/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "Bloodstone Island",
@@ -31,7 +35,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 94,
-      "slurl": "https://maps.secondlife.com/secondlife/Bloodstone%20Island/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/Bloodstone%20Island/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "Coco Beach Cove",
@@ -40,7 +48,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 92,
-      "slurl": "https://maps.secondlife.com/secondlife/Coco%20Beach%20Cove/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/Coco%20Beach%20Cove/128/128/25",
+      "language": null,
+      "language_name": null,
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "Boredom",
@@ -49,7 +61,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 87,
-      "slurl": "https://maps.secondlife.com/secondlife/Boredom/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/Boredom/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "Gold Paradise",
@@ -58,7 +74,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 87,
-      "slurl": "https://maps.secondlife.com/secondlife/Gold%20Paradise/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/Gold%20Paradise/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "Sugarwood",
@@ -67,7 +87,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 82,
-      "slurl": "https://maps.secondlife.com/secondlife/Sugarwood/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/Sugarwood/128/128/25",
+      "language": null,
+      "language_name": null,
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "Land of Vampires",
@@ -76,7 +100,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 80,
-      "slurl": "https://maps.secondlife.com/secondlife/Land%20of%20Vampires/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/Land%20of%20Vampires/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "Bunny Boy",
@@ -85,7 +113,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 76,
-      "slurl": "https://maps.secondlife.com/secondlife/Bunny%20Boy/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/Bunny%20Boy/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "PEAK Lounge",
@@ -94,7 +126,11 @@
       "rating": "Moderate",
       "rating_slug": "moderate",
       "avatars": 75,
-      "slurl": "https://maps.secondlife.com/secondlife/PEAK%20Lounge/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/PEAK%20Lounge/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "Paalen",
@@ -103,7 +139,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 72,
-      "slurl": "https://maps.secondlife.com/secondlife/Paalen/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/Paalen/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "The Known World",
@@ -112,7 +152,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 71,
-      "slurl": "https://maps.secondlife.com/secondlife/The%20Known%20World/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/The%20Known%20World/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     },
     {
       "name": "escort oasis",
@@ -121,7 +165,11 @@
       "rating": "Adult",
       "rating_slug": "adult",
       "avatars": 65,
-      "slurl": "https://maps.secondlife.com/secondlife/escort%20oasis/128/128/25"
+      "slurl": "https://maps.secondlife.com/secondlife/escort%20oasis/128/128/25",
+      "language": "en",
+      "language_name": "English",
+      "country": null,
+      "region_type": "region"
     }
   ],
   "recent_changes": [
@@ -426,5 +474,5 @@
       "when": "2026-11-01T01:30:52.2906417Z"
     }
   ],
-  "fetched_at": "2026-11-01T17:33:11.996Z"
+  "fetched_at": "2026-11-01T17:38:05.083Z"
 }

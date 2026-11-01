@@ -8,6 +8,8 @@ The runtime deployment can be configured independently by each maintainer. This 
 
 The GitHub Pages application is self-contained on the project domain. It uses public snapshots refreshed by GitHub Actions and links directly to official Second Life sources when a static page cannot perform a server-side relay.
 
+The “Ao vivo no mapa” view includes filters for probable language/country proxy, minimum and maximum avatar count, maturity (G/M/A) and source-published item type. The filter state updates both the region list and the map layer; the source currently publishes probable language, not the visitor's actual nationality.
+
 ## What it does
 
 - Brings together public and read-only grid data in one interface.
@@ -50,7 +52,7 @@ Public Second Life and community sources
 - `dist/server/index.js` is the generated Worker entrypoint used by Sites.
 - `scripts/build.sh` generates the deployable `dist/` directory.
 - `scripts/validate-artifact.mjs` checks the generated artifact before publication.
-- `docs/` is the static GitHub Pages project page. GitHub Pages cannot execute the Worker API; the live-data runtime is configured separately from this repository.
+- `docs/` is the static GitHub Pages project page and application build. GitHub Pages cannot execute the Worker API, so public snapshots are regenerated hourly by GitHub Actions.
 
 ## Run locally
 
@@ -59,7 +61,7 @@ bash scripts/build.sh
 node scripts/validate-artifact.mjs
 ```
 
-The generated Worker is intended for a Workers-compatible runtime. The hosted live version is published through Sites; GitHub Pages is used for documentation and project discovery.
+The generated Worker is intended for a Workers-compatible runtime. GitHub Pages is the canonical public entrypoint; its snapshot build keeps the application usable without a provider-specific runtime URL.
 
 ## Contributing
 

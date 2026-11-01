@@ -83,9 +83,15 @@ async function getText(url, fallback) {
 
 const home = await getJson('https://inworldmap.com/api/home', {});
 const stats = await getJson('https://inworldmap.com/api/stats', {});
+const busyDirectory = await getJson('https://inworldmap.com/api/search?sort=busiest&page=1', { items: [] });
+const directoryByName = new Map((busyDirectory.items || []).map((item) => [String(item.name || item.region || '').toLowerCase(), item]));
+const enrichedBusy = (home.busiest || []).slice(0, 12).map((item) => {
+  const detail = directoryByName.get(String(item.name || '').toLowerCase()) || {};
+  return { ...item, language: detail.language || null, language_name: detail.language_name || null, country: detail.country || null, region_type: detail.region_type || detail.type || null };
+});
 const unavailable = (message) => ({ status: 'unavailable', error: message });
 const fetchedAt = new Date().toISOString();
-await fs.writeFile(path.join(dataDir, 'world.json'), json({ source: 'Inworld Map public read-only API', totals: home.totals || {}, scan: home.latest_scan || home.scan || {}, busiest: (home.busiest || []).slice(0, 12), recent_changes: (stats.recent_changes || []).slice(0, 40), fetched_at: fetchedAt }), 'utf8');
+await fs.writeFile(path.join(dataDir, 'world.json'), json({ source: 'Inworld Map public read-only API', totals: home.totals || {}, scan: home.latest_scan || home.scan || {}, busiest: enrichedBusy, recent_changes: (stats.recent_changes || []).slice(0, 40), fetched_at: fetchedAt }), 'utf8');
 await fs.writeFile(path.join(dataDir, 'intelligence-home.json'), json({ ...home, fetched_at: fetchedAt }), 'utf8');
 await fs.writeFile(path.join(dataDir, 'intelligence-stats.json'), json({ ...stats, fetched_at: fetchedAt }), 'utf8');
 await fs.writeFile(path.join(dataDir, 'languages.json'), json(await getJson('https://inworldmap.com/api/languages', unavailable('Idiomas indisponíveis'))), 'utf8');
