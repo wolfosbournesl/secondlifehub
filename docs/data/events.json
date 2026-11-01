@@ -2,18 +2,6 @@
   "source": "Second Life official events",
   "events": [
     {
-      "id": "9417959",
-      "title": "STEVE WHO - OPEN AIR THEATRE @TheMMAC",
-      "date": "11/01 01:00 PM",
-      "region": "Cranston",
-      "location": "TheMMAC : WORLD STAGE - UNDERGROUND - AMPHITHEATER - BALLROOM",
-      "category_id": "20",
-      "category": "Live Music",
-      "slurl": "https://maps.secondlife.com/secondlife/Cranston/128/128/25",
-      "detail": "https://secondlife.com/my/community/events/event.php?id=9417959",
-      "source": "Second Life official events"
-    },
-    {
       "id": "9493292",
       "title": "Join the Service at House of Prayer This Afternoon",
       "date": "11/01 02:00 PM",
@@ -134,6 +122,6 @@
       "source": "Second Life official events"
     }
   ],
-  "fetched_at": "2026-11-01T20:56:23.333Z",
+  "fetched_at": "2026-11-01T21:01:43.386Z",
   "note": "Snapshot público substituível; confirme horário e disponibilidade na fonte oficial."
 }

@@ -54,6 +54,9 @@ const staticBridge = `
       if (value.startsWith('/api/intelligence/search')) {
         return nativeFetch(new URL(value, profileRelayOrigin).toString(), { ...init, headers: { accept: 'application/json', ...(init?.headers || {}) } }).then((response) => { if (!response.ok) throw new Error('directory relay unavailable'); return response; }).catch(() => nativeFetch('data/intelligence-search.json', init));
       }
+      if (value.startsWith('/api/intelligence/region')) {
+        return nativeFetch(new URL(value, profileRelayOrigin).toString(), { ...init, headers: { accept: 'application/json', ...(init?.headers || {}) } }).then((response) => { if (!response.ok) throw new Error('region relay unavailable'); return response; }).catch(() => nativeFetch('data/region.json', init));
+      }
       if (value.startsWith('/api/showbuzz')) {
         return nativeFetch(new URL(value, profileRelayOrigin).toString(), { ...init, headers: { accept: 'application/json', ...(init?.headers || {}) } }).catch(() => new Response(JSON.stringify({ status: 'relay_unavailable', message: 'O feed ShowBuzz não respondeu agora.', note: 'Tente novamente em alguns segundos.', fetched_at: new Date().toISOString() }), { status: 503, headers: { 'content-type': 'application/json' } }));
       }
