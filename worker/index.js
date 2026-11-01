@@ -693,9 +693,9 @@ export default {
         if (!params.has('sort')) params.set('sort', 'busiest');
         if (!params.has('page')) params.set('page', '1');
         const result = await jsonFrom('https://inworldmap.com/api/search?' + params.toString());
-        return new Response(JSON.stringify({ ...result, source: 'Inworld Map public read-only API', fetched_at: new Date().toISOString() }), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=60' } });
+        return new Response(JSON.stringify({ ...result, source: 'Inworld Map public read-only API', fetched_at: new Date().toISOString() }), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=60', 'access-control-allow-origin': '*' } });
       } catch (error) {
-        return new Response(JSON.stringify({ status: 'unavailable', error: 'Diretório de regiões indisponível no momento' }), { status: 503, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
+        return new Response(JSON.stringify({ status: 'unavailable', error: 'Diretório de regiões indisponível no momento' }), { status: 503, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'access-control-allow-origin': '*' } });
       }
     }
     if (url.pathname === '/api/intelligence/land') {
