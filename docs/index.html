@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Second Life Hub · open source</title>
+  <meta name="description" content="Projeto open source para explorar dados públicos do grid Second Life.">
+  <style>
+    :root{color-scheme:dark;--bg:#07111f;--panel:#0e1d31;--line:#1c3550;--text:#e9f5ff;--muted:#9db2c9;--mint:#8bf0cf;--violet:#a99cff}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 80% 0%,#1b2854 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.6 Inter,ui-sans-serif,system-ui,sans-serif}main{max-width:1080px;margin:auto;padding:48px 22px 72px}.eyebrow{color:var(--mint);font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:800}.hero{padding:42px 0 56px;border-bottom:1px solid var(--line)}h1{font-size:clamp(42px,8vw,82px);line-height:.98;letter-spacing:-.06em;max-width:780px;margin:18px 0}h1 span{color:var(--mint)}.lead{max-width:720px;color:var(--muted);font-size:20px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}a.button{display:inline-flex;padding:12px 17px;border-radius:12px;text-decoration:none;font-weight:800;border:1px solid var(--line);color:var(--text);background:#142945}a.button.primary{background:var(--mint);color:#07111f;border-color:var(--mint)}section{padding:42px 0;border-bottom:1px solid var(--line)}h2{font-size:30px;margin:0 0 18px}h3{margin:0 0 8px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:rgba(14,29,49,.82);border:1px solid var(--line);border-radius:18px;padding:20px}.card p,.note{color:var(--muted)}.badge{color:var(--violet);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}.source{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}.source a{color:var(--mint)}footer{padding-top:32px;color:var(--muted);font-size:14px}@media(max-width:760px){.grid{grid-template-columns:1fr}main{padding-top:28px}.source{display:block}}
+  </style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="eyebrow">Second Life Hub · open source</div>
+    <h1>Um radar público para um mundo enorme<span>.</span></h1>
+    <p class="lead">Uma interface independente para descobrir regiões, crowd, mapas, SLurls, eventos, festas, terrenos e sinais de atividade no Second Life — sempre mostrando a origem e os limites de cada dado.</p>
+    <div class="actions"><a class="button primary" href="https://github.com/wolfosbournesl/secondlifehub">Ver código no GitHub ↗</a><a class="button" href="https://wolfosbournesl.github.io/secondlifehub/">Página do projeto ↗</a></div>
+  </header>
+  <section><h2>O que existe no projeto</h2><div class="grid"><article class="card"><div class="badge">Grid</div><h3>Mapa e regiões</h3><p>Camadas de crowd, mapa, SLurls, detalhes de regiões, terrenos à venda e fila de sinais para revisão.</p></article><article class="card"><div class="badge">Agenda</div><h3>Eventos e festas</h3><p>Eventos oficiais e prévias comunitárias do ShowBuzz com horário, local, crowd e banners.</p></article><article class="card"><div class="badge">Transparência</div><h3>Dados honestos</h3><p>Snapshots, timestamps, fontes e estados não verificáveis ficam visíveis. Offline não é tratado como abandono.</p></article></div></section>
+  <section><h2>Fontes públicas</h2><div class="source"><span>Regiões, mapa, crowd e terrenos</span><a href="https://inworldmap.com/developers">Inworld Map API ↗</a></div><div class="source"><span>Status global e residentes online</span><a href="https://wiki.secondlife.com/wiki/Linden_Lab_Official:Live_Data_Feeds">Live Data Feeds ↗</a></div><div class="source"><span>Agenda de eventos</span><a href="https://secondlife.com/events/?lang=en-US">Second Life Events ↗</a></div><div class="source"><span>Festas e entretenimento</span><a href="https://showbuzz.org/">ShowBuzz ↗</a></div></section>
+  <section><h2>Contribuições são bem-vindas</h2><p class="note">O Second Life Hub é open source. Ajude com novos adaptadores públicos, testes, acessibilidade, traduções, visualizações e documentação. Não envie tokens, cookies, chaves privadas ou coletores de alto volume.</p><div class="actions"><a class="button primary" href="https://github.com/wolfosbournesl/secondlifehub/blob/main/CONTRIBUTING.md">Como contribuir ↗</a><a class="button" href="https://github.com/wolfosbournesl/secondlifehub/issues">Abrir uma issue ↗</a></div></section>
+  <footer>Projeto independente, sem afiliação com Linden Lab. Second Life® e seus elementos relacionados pertencem à Linden Research, Inc. Licença MIT.</footer>
+</main>
+</body>
+</html>
