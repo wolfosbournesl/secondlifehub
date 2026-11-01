@@ -10,6 +10,7 @@ The runtime deployment can be configured independently by each maintainer. This 
 
 - Brings together public and read-only grid data in one interface.
 - Shows busy regions, anonymous crowd snapshots, map layers, SLurls and region details.
+- The live view adds lazy-loaded map previews for each busy region, with a safe fallback when a tile is unavailable.
 - The map view provides official tile context with Hub overlays, layer switching, zoom, drag navigation, selectable markers and direct SLurls.
 - The intelligence view includes scan-history charts, maturity composition, a change watchlist and side-by-side region comparison.
 - Separates official, community and editorial sources instead of presenting every signal as fact.
