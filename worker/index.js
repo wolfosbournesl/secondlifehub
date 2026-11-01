@@ -390,7 +390,7 @@ async function fetchPublicSearch(url) {
 }
 
 async function showbuzzJsonFrom(url) {
-  const response = await fetchWithTimeout(url, { headers: { 'accept': 'application/json', 'accept-language': 'en-US,en;q=0.9', 'referer': 'https://showbuzz.org/', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/156 Safari/537.36' } }, 6000);
+  const response = await fetchWithTimeout(url, { headers: { 'accept': 'application/json', 'accept-language': 'en-US,en;q=0.9', 'referer': 'https://showbuzz.org/', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/156 Safari/537.36' } }, 25000);
   if (!response.ok) throw new Error('ShowBuzz respondeu ' + response.status);
   return response.json();
 }
