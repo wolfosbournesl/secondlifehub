@@ -20,7 +20,7 @@ The “Ao vivo no mapa” view includes filters for probable language/country pr
 - Separates official, community and editorial sources instead of presenting every signal as fact.
 - Includes official events, ShowBuzz live-party previews and public land listings.
 - Includes public inworld group search with relevance, name and popularity sorting, maturity filters, pagination and direct World profile links.
-- Expands avatar lookup by UUID/key only, with public display/username, profile image, full description, maturity metadata, picks and direct viewer/profile links; names and profile URLs are rejected to avoid ambiguity, while RL details and complete name history remain explicitly marked when unavailable.
+- Expands avatar lookup by UUID/key only, with public display/username, profile image, full description, maturity metadata, picks and direct viewer/profile links; names and profile URLs are rejected to avoid ambiguity.
 - The official-events view reads the public upcoming-events endpoint, supports text, category, day and sort filters, and shows SLurls plus public Inworld Map previews for each event region.
 - Includes a clearly labeled community-opportunity workflow: visitors can save local drafts, but nothing is presented as publicly submitted or moderated before a persistent review backend exists.
 - Lets visitors inspect a public avatar profile only by UUID/key without an account.
