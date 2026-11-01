@@ -294,6 +294,72 @@ async function fetchWithTimeout(url, options = {}, timeoutMs = 6000) {
   }
 }
 
+async function renderRootPage() {
+  let html = page;
+  const number = (value) => new Intl.NumberFormat('pt-BR').format(Number(value || 0));
+  const clock = (value) => {
+    if (!value) return 'sem leitura';
+    try {
+      return new Intl.DateTimeFormat('pt-BR', { hour: '2-digit', minute: '2-digit', timeZone: 'America/Sao_Paulo' }).format(new Date(value));
+    } catch {
+      return 'sem leitura';
+    }
+  };
+  const setText = (id, value) => {
+    const pattern = new RegExp('(<[^>]*\\bid="' + id + '"[^>]*>)[\\s\\S]*?(</[^>]+>)', 'i');
+    html = html.replace(pattern, '$1' + String(value) + '$2');
+  };
+
+  const liveRequest = (async () => {
+    try {
+      const response = await fetchWithTimeout('https://api.secondlife.com/datafeeds/secondlife.xml', { headers: { accept: 'application/xml,text/xml' } }, 4500);
+      const xml = await response.text();
+      const gridStatus = xmlValue(xml, 'status');
+      const residents = Number(xmlValue(xml, 'inworld'));
+      if (!response.ok || !gridStatus || !Number.isFinite(residents)) throw new Error('Feed oficial inválido');
+      return { gridStatus, residents, readAt: new Date().toISOString() };
+    } catch {
+      return null;
+    }
+  })();
+
+  const worldRequest = (async () => {
+    try {
+      const response = await fetchWithTimeout('https://inworldmap.com/api/home', { headers: { accept: 'application/json' } }, 4500);
+      if (!response.ok) throw new Error('Snapshot público inválido');
+      const data = await response.json();
+      const totals = data?.totals || {};
+      if (!Number.isFinite(Number(totals.regions))) throw new Error('Totais ausentes');
+      return { totals, scanAt: data?.latest_scan?.generated_at || data?.scan?.generated_at || null };
+    } catch {
+      return null;
+    }
+  })();
+  const [liveResult, worldResult] = await Promise.all([liveRequest, worldRequest]);
+
+  if (liveResult) {
+    setText('connectionState', 'feeds ativos');
+    setText('feedBadge', 'verificado');
+    setText('gridStatus', liveResult.gridStatus === 'ONLINE' ? 'ONLINE' : liveResult.gridStatus);
+    setText('onlineValue', number(liveResult.residents));
+    setText('onlineSummary', number(liveResult.residents));
+    setText('feedUpdated', 'lido ' + clock(liveResult.readAt));
+    html = html.replace(/(<div class="pulse-value) loading(" id="onlineValue")/i, '$1$2');
+  }
+
+  if (worldResult) {
+    const totals = worldResult.totals;
+    setText('regionCount', number(totals.regions));
+    setText('activeRegionCount', number(totals.regions_with_people));
+    setText('mapFeedMeta', number(totals.regions) + ' regiões · scan ' + clock(worldResult.scanAt));
+    setText('mapStatus', number(totals.regions_with_people) + ' regiões com pessoas · snapshot público');
+  }
+
+  html = html.replace(/(<div class="brand-kicker">)[\s\S]*?(<\/div>)/i, '$1GRID INTELLIGENCE · V0.8.28$2');
+  html = html.replace(/(<footer><span>)[\s\S]*?(<\/span>)/i, '$1Second Life Hub · v0.8.28 · sem cadastro no produto$2');
+  return html;
+}
+
 async function fetchPublicSearch(url) {
   let current = String(url);
   let cookie = '';
@@ -740,6 +806,6 @@ export default {
       }
     }
     if (url.pathname !== '/' && url.pathname !== '/index.html') return new Response('Not found', { status: 404 });
-    return new Response(page, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache' } });
+    return new Response(await renderRootPage(), { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache' } });
   }
 };
