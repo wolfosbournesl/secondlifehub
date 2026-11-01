@@ -591,13 +591,13 @@ export default {
     }
     if (url.pathname === '/api/avatar-profile') {
       const input = (url.searchParams.get('q') || '').trim();
-      if (!input) return new Response(JSON.stringify({ status: 'invalid', error: 'Informe um nome ou UUID/key.' }), { status: 400, headers: { 'content-type': 'application/json; charset=utf-8' } });
+      if (!input) return new Response(JSON.stringify({ status: 'invalid', error: 'Informe um nome ou UUID/key.' }), { status: 400, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*' } });
       const agentId = normalizeAvatarUuid(input);
       if (!agentId) {
         return new Response(JSON.stringify({ status: 'name_lookup_unavailable', input, source: 'Second Life public search', fetched_at: new Date().toISOString(), message: 'O nome precisa ser confirmado pela busca pública do Second Life antes de consultar o perfil.', note: 'Abra o resultado oficial, copie a UUID/key do perfil e consulte novamente aqui.', search_url: 'https://search.secondlife.com/?query_term=' + encodeURIComponent(input) + '&search_type=standard&collection_chosen=people' }), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
       }
       try {
-        return new Response(JSON.stringify(await fetchResidentProfile(agentId, input)), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=60' } });
+        return new Response(JSON.stringify(await fetchResidentProfile(agentId, input)), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=60', 'access-control-allow-origin': '*' } });
       } catch (error) {
         return new Response(JSON.stringify({ status: 'not_found', input, source: 'Second Life World API profile', fetched_at: new Date().toISOString(), message: 'Não foi possível encontrar um perfil público para essa key.', note: 'Confirme se a UUID está correta.' }), { status: 404, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
       }

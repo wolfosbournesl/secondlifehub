@@ -11,6 +11,7 @@ if (start < 'const page = `'.length || end < 0) throw new Error('Não foi possí
 let page = workerSource.slice(start, end);
 const staticBridge = `
   const githubPagesMode = location.hostname.endsWith('.github.io') || location.search.includes('static=1');
+  const profileRelayOrigin = 'https://secondlifehub-relay.volksec54.chatgpt.site';
   const githubPagesStatic = {
     '/api/world': 'data/world.json',
     '/api/live': 'data/live.json',
@@ -43,6 +44,7 @@ const staticBridge = `
     window.fetch = (input, init) => {
       const value = typeof input === 'string' ? input : input?.url || '';
       if (value.startsWith('/api/avatar-profile')) {
+        return nativeFetch(new URL(value, profileRelayOrigin).toString(), { ...init, headers: { accept: 'application/json', ...(init?.headers || {}) } }).catch(() => new Response(JSON.stringify({ status: 'relay_unavailable', message: 'O relay do perfil não respondeu agora.', note: 'A consulta permanece dentro do Hub; tente novamente em alguns segundos.', fetched_at: new Date().toISOString() }), { status: 503, headers: { 'content-type': 'application/json' } }));
         const query = new URL(value, location.href).searchParams.get('q') || '';
         const rawUuid = query.match(/[0-9a-f]{8}(?:-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|[0-9a-f]{24})|[0-9a-f]{32}/i)?.[0] || '';
         const uuid = rawUuid && !rawUuid.includes('-') ? rawUuid.replace(/^(........)(....)(....)(....)(............)$/, '$1-$2-$3-$4-$5').toLowerCase() : rawUuid;

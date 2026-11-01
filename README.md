@@ -6,7 +6,7 @@ Open-source radar for the Second Life grid: regions, crowd signals, maps, SLurls
 
 The runtime deployment can be configured independently by each maintainer. This repository does not publish a provider-specific runtime URL or any private deployment identifier.
 
-The GitHub Pages application is self-contained on the project domain. It uses public snapshots refreshed by GitHub Actions and links directly to official Second Life sources when a static page cannot perform a server-side relay.
+The GitHub Pages application remains on the project domain. Public snapshots are refreshed by GitHub Actions, and avatar profile queries are rendered in the Hub through the project's public relay instead of sending the visitor away to the source page.
 
 The “Ao vivo no mapa” view includes filters for probable language/country proxy, minimum and maximum avatar count, maturity (G/M/A) and source-published item type. The filter state updates both the region list and the map layer; the source currently publishes probable language, not the visitor's actual nationality.
 
@@ -36,7 +36,7 @@ The project is designed around no-login, public sources:
 - [ShowBuzz](https://showbuzz.org/) for community live entertainment data.
 - [Second Life World API](https://world.secondlife.com/) for public avatar profile pages and picks.
 
-No API keys, private tokens or login credentials are required by the published project. The avatar module is a public-profile consultation, not an online-status checker. On GitHub Pages, a UUID/key produces a usable direct profile/viewer result; the server relay additionally renders the public profile, image and picks when available.
+No API keys, private tokens or login credentials are required by the published project. The avatar module is a public-profile consultation, not an online-status checker. A UUID/key is queried in the Hub and the public display name, username, image, description, maturity and picks are rendered in the result panel when the source responds. Official profile/viewer links remain optional secondary actions.
 
 ## Architecture
 
@@ -52,7 +52,7 @@ Public Second Life and community sources
 - `dist/server/index.js` is the generated Worker entrypoint used by Sites.
 - `scripts/build.sh` generates the deployable `dist/` directory.
 - `scripts/validate-artifact.mjs` checks the generated artifact before publication.
-- `docs/` is the static GitHub Pages project page and application build. GitHub Pages cannot execute the Worker API, so public snapshots are regenerated hourly by GitHub Actions.
+- `docs/` is the static GitHub Pages project page and application build. GitHub Pages cannot execute the Worker API itself, so public snapshots are regenerated hourly by GitHub Actions and the profile module uses a CORS-enabled relay for live public profile reads.
 
 ## Run locally
 
@@ -61,7 +61,7 @@ bash scripts/build.sh
 node scripts/validate-artifact.mjs
 ```
 
-The generated Worker is intended for a Workers-compatible runtime. GitHub Pages is the canonical public entrypoint; its snapshot build keeps the application usable without a provider-specific runtime URL.
+The generated Worker is intended for a Workers-compatible runtime. GitHub Pages is the canonical public entrypoint; its snapshot build keeps the application usable without exposing a provider-specific runtime URL as the application's public address.
 
 ## Contributing
 
