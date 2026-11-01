@@ -43,6 +43,9 @@ const staticBridge = `
     const nativeFetch = window.fetch.bind(window);
     window.fetch = (input, init) => {
       const value = typeof input === 'string' ? input : input?.url || '';
+      if (value.startsWith('/api/groups-search')) {
+        return nativeFetch(new URL(value, profileRelayOrigin).toString(), { ...init, headers: { accept: 'application/json', ...(init?.headers || {}) } }).catch(() => new Response(JSON.stringify({ status: 'relay_unavailable', message: 'A busca pública de grupos não respondeu agora.', note: 'Tente novamente em alguns segundos.' }), { status: 503, headers: { 'content-type': 'application/json' } }));
+      }
       if (value.startsWith('/api/avatar-profile')) {
         return nativeFetch(new URL(value, profileRelayOrigin).toString(), { ...init, headers: { accept: 'application/json', ...(init?.headers || {}) } }).catch(() => new Response(JSON.stringify({ status: 'relay_unavailable', message: 'O relay do perfil não respondeu agora.', note: 'A consulta permanece dentro do Hub; tente novamente em alguns segundos.', fetched_at: new Date().toISOString() }), { status: 503, headers: { 'content-type': 'application/json' } }));
         const query = new URL(value, location.href).searchParams.get('q') || '';

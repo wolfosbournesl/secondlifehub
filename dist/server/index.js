@@ -72,6 +72,9 @@ const page = `<!doctype html>
   <style>
     .profile-result{display:grid;gap:15px}.profile-hero{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center}.profile-photo{width:96px;height:96px;border-radius:16px;object-fit:cover;border:1px solid rgba(139,240,207,.28);background:linear-gradient(135deg,rgba(139,240,207,.12),rgba(184,167,255,.14)),#0a191b}.profile-hero h3{margin:0 0 4px}.profile-username{color:var(--muted);font-size:10px}.profile-links{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.profile-links a{padding:7px 9px;border:1px solid rgba(139,240,207,.24);border-radius:7px;color:var(--mint);font-size:9px}.profile-facts{display:flex;gap:7px;flex-wrap:wrap}.profile-fact{padding:6px 8px;border:1px solid var(--line);border-radius:7px;color:var(--faint);font-size:9px}.profile-block{padding-top:13px;border-top:1px solid rgba(198,237,224,.1)}.profile-block h4{margin:0 0 8px;color:var(--ink);font-size:11px}.profile-description{white-space:pre-line;color:var(--muted);font-size:10px;line-height:1.55}.profile-muted{color:var(--faint);font-size:9px;line-height:1.5}.profile-picks{display:grid;gap:8px}.profile-pick{padding:10px;border:1px solid rgba(198,237,224,.1);border-radius:9px;background:rgba(8,18,20,.42)}.profile-pick strong{display:block;color:var(--ink);font-size:10px}.profile-pick p{margin:5px 0 0;color:var(--muted);font-size:9px;line-height:1.45}.profile-pick a{display:inline-block;margin-top:7px}.profile-privacy{padding:10px;border-left:2px solid var(--violet);background:rgba(184,167,255,.06);color:var(--muted);font-size:9px;line-height:1.5}@media(max-width:520px){.profile-hero{grid-template-columns:72px 1fr}.profile-photo{width:72px;height:72px}}
   </style>
+  <style>
+    .groups-board{display:grid;grid-template-columns:minmax(0,1fr);gap:15px}.groups-board>.panel{min-width:0}.group-search-form{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(135px,.7fr) minmax(145px,.75fr) auto;gap:9px;align-items:center;padding:15px 17px;border-bottom:1px solid var(--line)}.group-search-form input,.group-search-form select{width:100%;min-width:0;border:1px solid rgba(187,202,238,.2);border-radius:9px;padding:10px;background:rgba(8,13,26,.78);color:var(--ink);font-size:10px;outline:0}.group-search-form input:focus,.group-search-form select:focus{border-color:rgba(98,230,210,.65);box-shadow:0 0 0 3px rgba(98,230,210,.1)}.group-search-form .button{white-space:nowrap;padding:10px 13px}.group-meta{padding:12px 17px 0;color:var(--faint);font-size:9px;line-height:1.4}.group-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;padding:14px 17px 16px}.group-card{display:grid;grid-template-columns:78px minmax(0,1fr);gap:13px;min-width:0;min-height:154px;padding:13px;border:1px solid rgba(187,202,238,.14);border-radius:12px;background:linear-gradient(145deg,rgba(18,31,53,.75),rgba(11,19,34,.72));overflow:hidden}.group-card:hover{border-color:rgba(98,230,210,.55);box-shadow:0 12px 30px rgba(0,0,0,.18);transform:translateY(-1px)}.group-image{width:78px;height:78px;display:grid;place-items:center;overflow:hidden;border:1px solid rgba(98,230,210,.22);border-radius:12px;background:linear-gradient(135deg,rgba(98,230,210,.14),rgba(184,167,255,.14)),#0a1325;color:var(--mint);font-size:22px}.group-image:before{content:'◎';opacity:.7}.group-image:has(img):before{display:none}.group-image img{width:100%;height:100%;display:block;object-fit:cover}.group-card>div:last-child{min-width:0}.group-badge{display:inline-flex;max-width:100%;padding:4px 6px;border-radius:5px;background:rgba(98,230,210,.1);color:var(--mint);font-size:8px;line-height:1.2;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.group-card h4{margin:8px 0 6px;color:var(--ink);font-size:12px;line-height:1.3;overflow-wrap:anywhere}.group-card p{margin:4px 0;color:var(--muted);font-size:9px;line-height:1.45;overflow-wrap:anywhere}.group-card .group-founder{color:var(--faint)}.group-card a{display:inline-block;margin-top:9px;color:var(--mint);font-size:9px;text-decoration:none}.group-card a:hover{text-decoration:underline}.group-empty{grid-column:1/-1;padding:22px 2px;color:var(--muted);font-size:10px;line-height:1.55}.group-pager{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 17px;border-top:1px solid rgba(198,237,224,.08);color:var(--faint);font-size:9px}.group-pager button{border:1px solid rgba(187,202,238,.2);border-radius:7px;background:rgba(8,13,26,.5);color:var(--mint);padding:7px 9px;font-size:9px}.group-pager button:disabled{color:var(--faint);cursor:not-allowed;opacity:.55}.group-note{padding:0 17px 17px;color:var(--faint);font-size:9px;line-height:1.5}@media(max-width:850px){.group-search-form{grid-template-columns:1fr 1fr}.group-search-form input{grid-column:1/-1}.group-search-form .button{width:100%}.group-grid{grid-template-columns:1fr}}@media(max-width:520px){.group-search-form{grid-template-columns:1fr}.group-search-form input{grid-column:auto}.group-card{grid-template-columns:62px minmax(0,1fr);gap:10px;padding:11px}.group-image{width:62px;height:62px}.group-pager{align-items:stretch;flex-direction:column;text-align:center}.group-pager button{width:100%}}
+  </style>
 </head>
 <body>
 <div class="shell">
@@ -246,6 +249,35 @@ async function fetchWithTimeout(url, options = {}, timeoutMs = 6000) {
   } finally {
     clearTimeout(timer);
   }
+}
+
+async function fetchPublicSearch(url) {
+  let current = String(url);
+  let cookie = '';
+  for (let attempt = 0; attempt < 8; attempt += 1) {
+    const response = await fetchWithTimeout(current, {
+      redirect: 'manual',
+      headers: {
+        accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'accept-language': 'en-US,en;q=0.9',
+        ...(cookie ? { cookie } : {}),
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36'
+      }
+    }, 5000);
+    const setCookie = response.headers.get('set-cookie') || '';
+    const session = setCookie.match(/(?:^|,\s*)sessionid=([^;]+)/i);
+    if (session) cookie = 'sessionid=' + session[1];
+    if (response.status >= 300 && response.status < 400) {
+      const location = response.headers.get('location');
+      if (!location) throw new Error('Busca sem destino');
+      const next = new URL(location, current);
+      if (!['search.secondlife.com', 'id.secondlife.com'].includes(next.hostname)) throw new Error('Destino de busca não permitido');
+      current = next.toString();
+      continue;
+    }
+    return response;
+  }
+  throw new Error('Autenticação pública da busca excedeu o limite');
 }
 
 async function showbuzzJsonFrom(url) {
@@ -447,17 +479,17 @@ export default {
     }
     if (url.pathname === '/api/groups-search') {
       const query = (url.searchParams.get('q') || '').trim().slice(0, 120);
-      if (!query) return new Response(JSON.stringify({ status: 'invalid_query', error: 'Digite um termo para buscar grupos.' }), { status: 400, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
+      if (!query) return new Response(JSON.stringify({ status: 'invalid_query', error: 'Digite um termo para buscar grupos.' }), { status: 400, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'access-control-allow-origin': '*' } });
       try {
         const params = new URLSearchParams({ query_term: query, search_type: 'standard', collection_chosen: 'groups' });
         for (const key of ['sort', 'maturity', 'page']) { const value = url.searchParams.get(key); if (value) params.set(key, value); }
-        const response = await fetchWithTimeout('https://search.secondlife.com/?' + params.toString(), { headers: { accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8', 'accept-language': 'en-US,en;q=0.9', referer: 'https://search.secondlife.com/', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36' } }, 8000);
+        const response = await fetchPublicSearch('https://search.secondlife.com/?' + params.toString());
         if (!response.ok) throw new Error('Busca de grupos respondeu ' + response.status);
         const result = parseGroupSearch(await response.text());
         result.page = Number(url.searchParams.get('page') || 1);
-        return new Response(JSON.stringify(result), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=120' } });
+        return new Response(JSON.stringify(result), { headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=120', 'access-control-allow-origin': '*' } });
       } catch (error) {
-        return new Response(JSON.stringify({ status: 'unavailable', error: 'A busca pública de grupos está indisponível no momento.' }), { status: 503, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' } });
+        return new Response(JSON.stringify({ status: 'unavailable', error: 'A busca pública de grupos está indisponível no momento.' }), { status: 503, headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'access-control-allow-origin': '*' } });
       }
     }
     if (url.pathname === '/api/event-previews') {
